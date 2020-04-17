@@ -2,8 +2,15 @@
 #include <string>
 using namespace std;
 
+int GetUserInput() {
+  int input;
+  cout << "Enter an input" << endl;
+  cin >> input;
+  return input;
+}
+
 int main() {
-  int number = get_user_input();
+  int number = GetUserInput();
 
   int value = 0;
   if (number % 1 == 0) {
@@ -13,7 +20,7 @@ int main() {
     value++;
   }
   if (number % 3 == 0) {
-    value--;
+    value++;
   }
   if (number % 4 == 0) {
     value++;
@@ -27,8 +34,14 @@ int main() {
   if (number % 7 == 0) {
     value++;
   }
+  if (number % 8 == 0) {
+    value++;
+  }
+  if (number % 9 == 0) {
+    value++;
+  }
 
-  cout << "The number of multiples less than 10 for " << number " is: " << value << endl;
+  cout << "The number of multiples less than 10 for " << number << " is: " << value << endl;
 
   return 0;
 }
