@@ -9,16 +9,14 @@ int main() {
 
   if (is_student) {
     if (is_cs_student) {
-      cout << "Excellent they are learning amazing things!";
-    } else
-    if (is_math_student) {
-      cout << "Hmm, glad there learning something.";
-    }
-    else {
-      cout << "Well I hope they are enjoying what they are learning."
+      cout << "Excellent, they are learning amazing things!";
+    } else if (is_math_student) {
+      cout << "Hmm, glad they're learning something.";
+    } else {
+      cout << "Well I hope they are enjoying what they are learning.";
     }
   } else {
-    cout << "It seems like they should be back in school!"
+    cout << "It seems like they should be back in school!";
   }
   return 0;
 }

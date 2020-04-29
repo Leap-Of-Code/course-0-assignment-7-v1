@@ -15,12 +15,14 @@ int main() {
 
   if (needs_engine) {
     cost_of_repairs = cost_of_repairs + engine_cost;
-  } else if (needs_breaks) {
+  }
+  if (needs_breaks) {
     cost_of_repairs = cost_of_repairs + breaks_cost;
-  } else if (needs_windshield) {
+  }
+  if (needs_windshield) {
     cost_of_repairs = cost_of_repairs + windshield_cost;
   }
 
-  cout << "The total repair costs will be: " << cost_of_repairs;
+  cout << "The total repair costs will be: " << cost_of_repairs << endl;
   return 0;
 }

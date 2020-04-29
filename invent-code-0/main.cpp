@@ -5,11 +5,27 @@ using namespace std;
 // If both value_one and value_two are positive, increment and return output. If not decrement and return output.
 int CheckAllPositive(const float value_one, const float value_two, int output) {
   // Write code here.
+  if (value_one > 0 && value_two > 0) {
+    output++;
+  } else {
+    output--;
+  }
+  return output;
 }
 
 // If the product of value_one and value_two is greater than the sum, increment and return output. If that is not true, but the sum of value_one and value_two is greater than zero, decrement output and return it. If neither of those is true, return 0.
 int EvaluateScale(const float value_one, const float value_two, int output) {
   // Write code here.
+  float product = value_one * value_two;
+  float sum = value_one + value_two;
+  if (product > sum) {
+    output++;
+  } else if (sum > 0) {
+    output--;
+  } else {
+    output = 0;
+  }
+  return output;
 }
 
 // Given a number print out a single fortune for a user.
@@ -24,6 +40,12 @@ void PrintFortune(int number) {
   if (number == 2) {
     cout << "Any decision you have to make tomorrow is a good decision." << endl;
   }
+  if (number == 0) {
+    cout << "Your will find a coin on the floor tomorrow." << endl;
+  }
+  if (number == 1) {
+    cout << "You will get rained on in the future." << endl;
+  }  
 }
 
 int main() {
