@@ -5,13 +5,15 @@ using namespace std;
 float GetAbsoluteValue(const float input) {
   if (input < 0) {
     return -1 * input;
-  } else (input >= 0) {
+  } 
+  else {
     return input;
   }
 }
 
 int main() {
-  float value = GetUserInput();
+  float value = 0;
+  cout << "what is your value?";
+  cin >> value;
   cout << "The absolute value is: " << GetAbsoluteValue(value);
-  return 0;
 }
