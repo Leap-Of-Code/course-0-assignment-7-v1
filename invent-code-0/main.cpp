@@ -8,19 +8,26 @@ int CheckAllPositive(const float value_one, const float value_two, int output) {
     output++;
     return output;
   }
+  else{
+    output--;
+    return output;
+  }
   // Write code here.
 }
 
 // If the product of value_one and value_two is greater than the sum, increment and return output. If that is not true, but the sum of value_one and value_two is greater than zero, decrement output and return it. If neither of those is true, return 0.
 int EvaluateScale(const float value_one, const float value_two, int output) {
-  if ((value_one * value_two) > (value_one + value_two))
+  if ((value_one * value_two) > (value_one + value_two)) {
     output++;
     return output;
-  else if((value_one + value_two) > 0)
+  }
+  else if (value_one + value_two > 0){
     output--;
     return output;
-  else()
+  }
+  else {
     return 0;
+  }
   // Write code here.
 }
 
