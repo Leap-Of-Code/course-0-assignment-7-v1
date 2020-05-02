@@ -26,7 +26,7 @@ int number_of_output = 0;
   }
   if (input_y % 6 == 0) {
     number_of_output++;
-    cout << "6,";
+    cout << "6, ";
   }
   if (input_y % 7 == 0) {
     number_of_output++;
@@ -39,6 +39,10 @@ int number_of_output = 0;
   if (input_y % 9 == 0) {
     number_of_output++;
     cout << "9, ";
+  }
+  if (input_y % 10 == 0) {
+    number_of_output++;
+    cout << "10, ";
   }
   cout << "Total number of output is " << number_of_output << ".";
 }
